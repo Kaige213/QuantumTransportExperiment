@@ -1,0 +1,133 @@
+{
+    "configureParameters": {
+        "other": {
+            "waitingTime": 0.01,
+            "unit": "s"
+        },
+        "LI5650": {
+            "ifRun": false,
+            "address": "TCPIP0::127.0.0.1::33564::SOCKET",
+            "voltage": 1.0,
+            "frequency": 17.7,
+            "referenceSignal": "REF IN",
+            "signalInput": "I",
+            "filterSlope": "24 dB",
+            "timeConstant": 1.0,
+            "auto": true,
+            "unit": "V"
+        },
+        "SR830": {
+            "ifRun": false,
+            "address": "TCPIP0::127.0.0.1::33565::SOCKET",
+            "voltage": 1.0,
+            "frequency": 17.7,
+            "phase": 0.0,
+            "unit": "V"
+        },
+        "N5244A": {
+            "ifRun": true,
+            "address": "TCPIP0::127.0.0.1::33566::SOCKET",
+            "sweepType": "Power",
+            "CW_frequence": 1.0,
+            "CW_ifPowerOn": true,
+            "CW_power": -10.0,
+            "power_points": 101,
+            "power_frequence": 1.0,
+            "power_start": -10.0,
+            "power_stop": 0.0,
+            "frequence_points": 101,
+            "frequence_power": -10.0,
+            "frequence_ifPowerOn": true,
+            "frequence_start": 1.0,
+            "frequence_stop": 2.0,
+            "ifAverage": false,
+            "averagingFactor": 1,
+            "IF_BW": 10.0
+        },
+        "GS610R": {
+            "range": "2 V",
+            "address": "TCPIP0::127.0.0.1::33560::SOCKET",
+            "unit": "V"
+        },
+        "GS610L": {
+            "range": "110 V",
+            "address": "TCPIP0::127.0.0.1::33561::SOCKET",
+            "unit": "V"
+        },
+        "GS210": {
+            "range": "10 V",
+            "address": "TCPIP0::127.0.0.1::33562::SOCKET",
+            "unit": "V"
+        },
+        "Magnet": {
+            "sweepMode": "As Fast As Possible",
+            "rate": 0.1,
+            "address": "TCPIP0::127.0.0.1::33563::SOCKET",
+            "ifPOC": false,
+            "unit": "T"
+        },
+        "Time": {
+            "address": "GPIB0::5::INSTR",
+            "unit": "s"
+        }
+    },
+    "runningParameters": {
+        "GS610R": {
+            "ifRun": false,
+            "start": 0.0,
+            "loop": "1->",
+            "stop": 11.0,
+            "current": 0,
+            "points": 111,
+            "step": 0.1
+        },
+        "GS610L": {
+            "ifRun": false,
+            "start": 0.0,
+            "loop": "1->",
+            "stop": 12.0,
+            "current": 0,
+            "points": 121,
+            "step": 0.1
+        },
+        "GS210": {
+            "ifRun": false,
+            "start": 0.0,
+            "loop": "1->",
+            "stop": 121.0,
+            "current": 0,
+            "points": 122,
+            "step": 1.0
+        },
+        "Magnet": {
+            "ifRun": false,
+            "start": 0.0,
+            "loop": "1->",
+            "stop": 111.0,
+            "current": 0,
+            "points": 112,
+            "step": 1.0
+        },
+        "Time": {
+            "ifRun": true,
+            "start": 0.0,
+            "loop": "1->",
+            "stop": 11.0,
+            "current": 0,
+            "points": 101,
+            "step": 0.11
+        },
+        "sweepBack": {
+            "ifRun": true,
+            "points": 101
+        }
+    },
+    "saveConfigure": {
+        "folderPath": "F:/Data/5",
+        "ifSave": true,
+        "log": "Test Log"
+    },
+    "runConfigure": {
+        "numberOfCurves": 300
+    }
+}
